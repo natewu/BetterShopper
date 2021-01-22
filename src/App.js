@@ -3,6 +3,8 @@ import './App.css';
 import Nav from "./components/Nav"
 import Desc from "./components/Description"
 import Input from "./components/Input"
+import Output from "./components/Output"
+import Footer from "./components/Footer"
 
 export class App extends Component {
   render() {
@@ -12,6 +14,8 @@ export class App extends Component {
           <Nav/>
           <Desc/>
           <Input/>
+          <Output/>
+          <Footer/>
         </div>
       </div>
     )
