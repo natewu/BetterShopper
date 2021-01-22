@@ -1,0 +1,19 @@
+.uploadImage{
+    background-color: rgb(245, 245, 245);
+    max-width:100%;
+    height: 8vmin;
+    min-height: 50px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+.info > p{
+    margin: 0 !important;
+    font-size: 1.5vmin;
+}
+.uploadImage > .MuiSvgIcon-root{
+    padding: 15px;
+}
+.icon{
+    font-size: 3.5vmin !important;
+}
