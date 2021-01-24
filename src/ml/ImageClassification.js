@@ -16,7 +16,7 @@ export class ImageClassification extends Component {
 
     async init(){
         let model = undefined;
-        model = await tf.loadLayersModel("./clothingModel/model.json");
+        model = await tf.loadLayersModel(".\tfjs_files\modelcheck.json");
         console.log("Model Loaded");
     }
         
