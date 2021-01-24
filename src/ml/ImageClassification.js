@@ -4,8 +4,6 @@ import React, { Component } from 'react'
 import Button from '@material-ui/core/Button';
 
 export class ImageClassification extends Component {
-   
-    
     async upload() {
         console.log("upload");
         const img = document.getElementById("img")
@@ -15,6 +13,13 @@ export class ImageClassification extends Component {
         console.log(predictions);
         
     }
+
+    async init(){
+        const tf = require("@tensorflow/tfjs");
+        const model = await tf.loadLayersModel("./clothingModel/model.json");
+        console.log("loaded");
+        model.summary();
+    }
         
     render() {
     
@@ -22,6 +27,7 @@ export class ImageClassification extends Component {
             <div>
                 <img id="img" alt="car" src="./shirt.png"/>
                 <Button onClick={async() => await this.upload()} variant="outlined" color="primary" style={{margin:"0 15px 0 auto"}}>Browse</Button>
+                {this.init()}
             </div>
         )
     }
