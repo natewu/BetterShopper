@@ -11,15 +11,15 @@ export class ImageClassification extends Component {
         const predictions = await model.classify(img);
         console.log('Predictions: ');
         console.log(predictions);
-        
     }
 
+
     async init(){
-        const tf = require("@tensorflow/tfjs");
-        const model = await tf.loadLayersModel("./clothingModel/model.json");
-        console.log("loaded");
-        model.summary();
+        let model = undefined;
+        model = await tf.loadLayersModel("https://raw.githubusercontent.com/natewu/BetterShopper/master/src/ml/clothingModel/model.json");
+        console.log("Model Loaded");
     }
+ 
         
     render() {
     
@@ -27,7 +27,7 @@ export class ImageClassification extends Component {
             <div>
                 <img id="img" alt="car" src="./shirt.png"/>
                 <Button onClick={async() => await this.upload()} variant="outlined" color="primary" style={{margin:"0 15px 0 auto"}}>Browse</Button>
-                {this.init()}
+                {/* {this.init()} */}
             </div>
         )
     }
