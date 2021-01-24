@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-export class Kijijiscraper extends Component {
+export class Googlescraper extends Component {
     render() {
         return (
             <div>
@@ -10,4 +10,4 @@ export class Kijijiscraper extends Component {
     }
 }
 
-export default Kijijiscraper
+export default Googlescraper
