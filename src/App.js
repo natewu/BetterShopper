@@ -24,7 +24,7 @@ export class App extends Component {
 				<Nav/>
 				<Desc/>
 				<Input/>
-				<ImageClassification/>
+				{/* <ImageClassification/> */}
 				<Output/>
 				<Footer/>
 				</div>

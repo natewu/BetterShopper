@@ -7,7 +7,7 @@ function Description() {
                 Shop better. Safer.
             </h4>
             <p>
-                Description goes here.
+                Shop safer with BetterShopper. BetterShopper aims to provide a better shopping experience for users to prevent them from getting scammmed or buying overpriced items from used and new sellers.
             </p>
         </div>
     )
