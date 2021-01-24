@@ -16,7 +16,7 @@ export class ImageClassification extends Component {
 
     async init(){
         let model = undefined;
-        model = await tf.loadLayersModel("./clothingModel/model.json");
+        model = await tf.loadLayersModel(".\tfjs_files\modelcheck.json");
         console.log("Model Loaded");
     }
         
@@ -26,7 +26,7 @@ export class ImageClassification extends Component {
                 {/* <img id="img" alt="car" src="./shirt.png"/> */}
                 {/* <Input data={this.props.image}/> */}
                 <Button onClick={async() => await this.upload()} variant="outlined" color="primary" style={{margin:"0 15px 0 auto"}}>Predict</Button>
-                {/* {this.init()} */}
+                {this.init()}
             </div>
         )
     }

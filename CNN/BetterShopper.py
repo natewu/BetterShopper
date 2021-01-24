@@ -288,7 +288,7 @@ for train, test in kfold.split(inputs, targets):
       f'model.hd5',
       verbose=1,
       save_best_only=True,
-      save_weights_only=False
+      save_weights_only=True
   )
   optimizer = Adam(lr=1e-3, beta_1=0.9, beta_2=0.999 )
 
