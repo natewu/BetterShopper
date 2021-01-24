@@ -285,10 +285,10 @@ for train, test in kfold.split(inputs, targets):
 
 
   ckpt = ModelCheckpoint(
-      f'cloth-model-weights{fold_no}.hdf5',
+      f'model.hd5',
       verbose=1,
       save_best_only=True,
-      save_weights_only=True
+      save_weights_only=False
   )
   optimizer = Adam(lr=1e-3, beta_1=0.9, beta_2=0.999 )
 
@@ -337,7 +337,6 @@ plt.ylabel('loss')
 plt.legend(labels=['train','validation'])
 plt.show()
 
-model.save('model.h5')
 
 score = model.evaluate(TRAIN_VAL, TEST_VAL)
 
