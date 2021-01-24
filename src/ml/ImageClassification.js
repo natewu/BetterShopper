@@ -22,10 +22,8 @@ export class ImageClassification extends Component {
         
     render() {
         return (
-            <div>
-                {/* <img id="img" alt="car" src="./shirt.png"/> */}
-                {/* <Input data={this.props.image}/> */}
-                <Button onClick={async() => await this.upload()} variant="outlined" color="primary" style={{margin:"0 15px 0 auto"}}>Predict</Button>
+            <div style={this.props.style}>
+                <Button onClick={async() => await this.upload()} variant="outlined" color="primary" style={{margin:"0 auto 0 auto"}}>Predict</Button>
                 {/* {this.init()} */}
             </div>
         )

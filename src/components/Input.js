@@ -57,17 +57,18 @@ export class Input extends Component {
                     </div>
                     <Button id="upload" variant="outlined" color="primary" style={{margin:"0 15px 0 auto"}}>Browse <input type="file" name="file" onChange={this.onChangeHandler}/></Button>
                 </div> */}
-                <form className="uploadImage">
+                <label for="input" className="uploadImage">
                     <CloudUploadIcon className="icon"/>
                     <div className="info">
-                        <input id="input" type="file" name="file" onChange={this.setImages}/>
-                        <p>Drag images here</p>
+                        <p>Browse Images</p>
                         <p style={{fontSize:"1.4vmin", color:"rgb(130 130 130)"}}>Max File size {} • JPG/JPEG, PNG</p>
                     </div>
-                    <Button id="upload" variant="outlined" color="primary" style={{margin:"0 15px 0 auto"}}>Browse</Button>
-                </form>
-                {image.map(image => <img id="test" alt="test" src={image} style={{maxWidth:"100%", height:"auto"}}/>)}
-                <ImageClassification image={this.state.image}/>
+                    <input id="input" type="file" name="file" size="50" hidden accept=".jpg, .jpeg, .png, .jfif, .webp, .svg, .bmp, .ppm" onChange={this.setImages}/>
+                    {/* <Button id="upload" variant="outlined" color="primary" style={{margin:"0 15px 0 auto"}}>Browse</Button> */}
+                    <ImageClassification image={this.state.image} style={{margin:"0 15px 0 auto"}}/>
+                </label>
+                {image.map(image => <img id="test" alt="test" src={image} style={{maxWidth:"100%", height:"auto", marginTop:"10px"}}/>)}
+                
             </div>
         )
     }

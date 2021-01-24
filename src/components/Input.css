@@ -4,8 +4,13 @@
     height: 8vmin;
     min-height: 50px;
     border-radius: 5px;
+    /* border: 1px dashed #000000; */
     display: flex;
     align-items: center;
+    cursor: pointer;
+}
+.uploadImage:hover{
+    border: 1px dashed #000000;
 }
 .info > p{
     margin: 0 !important;
