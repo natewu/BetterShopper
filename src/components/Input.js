@@ -13,8 +13,9 @@ export class Input extends Component {
                     <div className="info">
                         <p>Drag images here</p>
                         <p style={{fontSize:"1.4vmin", color:"rgb(130 130 130)"}}>Max File size {} • JPG/JPEG, PNG</p>
+                        <input type="file" name="file" onChange={this.onChangeHandler}/>
                     </div>
-                    <Button variant="outlined" color="primary" style={{margin:"0 15px 0 auto"}}>Browse</Button>
+                    <Button id="upload" variant="outlined" color="primary" style={{margin:"0 15px 0 auto"}}>Browse</Button>
                 </div>
             </div>
         )
