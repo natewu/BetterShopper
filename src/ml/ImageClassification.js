@@ -20,7 +20,7 @@ export class ImageClassification extends Component {
     
         return (
             <div>
-                <img id="img" alt="car" src="/image.jpg"/>
+                <img id="img" alt="car" src="./shirt.png"/>
                 <Button onClick={async() => await this.upload()} variant="outlined" color="primary" style={{margin:"0 15px 0 auto"}}>Browse</Button>
             </div>
         )
