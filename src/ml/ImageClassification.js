@@ -10,6 +10,8 @@ export const ImageClassification = () => {
     const show = () => setShowResults(true);
     // let query;
     async function upload() {
+        setShowResults(false);
+        setResults([]);
         console.log("upload");
         const img = document.getElementById("test");
         console.log(img);
@@ -24,7 +26,7 @@ export const ImageClassification = () => {
 
     return (
         <div style={{display:"grid", marginTop:"10px"}}>
-            <Button onClick={async() => await upload()} variant="outlined" color="primary" style={{margin:"0 auto"}}>Predict</Button>
+            <Button onClick={async() => await upload()} variant="outlined" color="primary" style={{margin:"0 auto", padding:"10px 50px 10px 50px"}}>Shop</Button>
             { showResults ? <p><b>Product predicted:</b> {results[0].className.split(",",1)}: {((results[0].probability)*100).toFixed(2)+"%"}</p> : null}
             { showResults ? <Output search={results[0].className.split(",",1)}/> : null}
             
