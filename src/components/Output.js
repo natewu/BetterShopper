@@ -45,8 +45,7 @@ export class Output extends Component {
             data.shopping_results.forEach(res => {
                 result = `
                 <div style="text-decoration:none; border: 1px solid #3f51b5; background-color: rgb(245, 245, 245); width:80%; height:100%; border-radius:5px; margin: 50px auto 50px auto; display:grid; grid-template-rows: 2.5fr 0.6fr 0.5fr 0.5fr; padding-bottom: 10px; grid-template-columns: 1fr 5fr 1fr;">
-                    
-                    <a target ="_blank" style="text-decoration: none!important; grid-column:2; margin: auto; href="${res.link}"><img src=${res.image} style="grid-column:2; margin: auto;"></img></a>
+                    <a target ="_blank" style="text-decoration: none!important; grid-column:2; margin: auto;" href="${res.link}"><img src=${res.image} style="grid-column:2; margin: auto;"></img></a>
                     <h3 style="grid-column:2;"><a target ="_blank" style="text-decoration: none!important; color: black; font-weight:300;"href="${res.link}">${res.title}</a></h3>
                     <h4 style="grid-column:2; font-weight:500;">$${res.price}</h4>
                     <p style="grid-column:2; font-weight:300;">${res.snippet}</p>
