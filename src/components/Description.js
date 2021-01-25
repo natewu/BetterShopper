@@ -7,7 +7,7 @@ function Description() {
                 Shop better. Safer.
             </h4>
             <p>
-                Shop safer with BetterShopper. BetterShopper aims to provide a better shopping experience for users to prevent them from getting scammmed or buying overpriced items from used and new sellers.
+                Are you paranoid of constantly being scammed? Snatched from deals? BetterShopper allows you to shop safer, and aims to provide a better shopping experience for everyone. This website will insure you won't be buying overpriced items, and organizes them through the ratings and price counts. You won't need to worry about shopping online ever again! Shop Better. Safer.
             </p>
         </div>
     )
