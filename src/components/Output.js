@@ -36,7 +36,7 @@ export class Output extends Component {
         var query = this.props.search;
         console.log(query);
         let result = '';
-        var API_KEY = '28DDF1C58C694BA7810D6BB13D3C4B99';
+        var API_KEY = '7800C2A1DBBA412598E81DD3FBB428B5';
         var url = 'https://api.scaleserp.com/search?api_key=' + API_KEY + '&q=' + query + '&shopping_buy_on_google=false&shopping_price_min=100&shopping_condition=used&include_html=false&google_domain=google.ca&location=Canada&url=&gl=ca&hl=en&search_type=shopping&sort_by=review_score&page=1&output=json';
         $.get(url, function(data) {
             $("#result").html('')
